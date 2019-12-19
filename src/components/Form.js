@@ -54,7 +54,7 @@ const OnboardForm = ({ values, errors, touched, status }) => {
         <label htmlFor="terms">
           Terms of Service
           <Field type="checkbox" id="terms" name="terms" />
-          
+
         </label>
         <button>Submit!</button>
       </Form>
@@ -64,7 +64,7 @@ const OnboardForm = ({ values, errors, touched, status }) => {
           <li>Email: {people.email}</li>
           <li>Password: {people.password}</li>
           <li>Role: {people.role}</li>
-          <li>Terms: {people.terms}</li>
+          <li>Terms: {people.terms.toString()}</li>
         </ul>
       ))}
     </div>
